@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct comp
+{
+        int img;
+        int real,ans
+}a,b,c;
+
+int main()
+{
+        printf("Enter the imaginary part of complex number 1:");
+        scanf("%d",&a.img);
+         printf("Enter the real part of complex number 1:");
+        scanf("%d",&a.real);
+         printf("Enter the imaginary part of complex number 2:");
+        scanf("%d",&b.img);
+         printf("Enter the real part of complex number 1:");
+        scanf("%d",&b.real);
+
+        int i*i =-1;
+        c.ans=a.real*b.real+b.img*a.img*i*i;
+         printf("The muliplication of two complex numbers %d + %di and %d + %di is:",a.real,a.img,b.real,b.img);
+         printf("\n %d",c.ans);
+}
