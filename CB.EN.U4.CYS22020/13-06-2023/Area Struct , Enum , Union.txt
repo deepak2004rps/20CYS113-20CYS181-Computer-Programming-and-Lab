@@ -1,0 +1,34 @@
+#include<stdio.h>
+struct Shape
+{
+    enum type{Circle=1,Rectangle}t;
+    union dimensions
+    {
+        float length;
+        float radius;
+    }d;
+}s;
+int main()
+{
+    float breadth;
+    float area;
+    scanf("%d ",&s.t);
+    switch(s.t)
+    {
+        case 1:
+        scanf("%f ",&s.d.radius);
+        area=3.14*s.d.radius*s.d.radius;
+        printf("Area of the circle: %.4f units",area);
+        break;
+        case 2:
+        scanf("%f ",&s.d.length);
+        scanf("%f",&breadth);
+        area=s.d.length*breadth;
+        printf("Area of the rectangle: %.4f units",area);
+        break;
+        default:
+        printf("Invalid choice!");
+        break;
+    }
+    return 0;
+}
